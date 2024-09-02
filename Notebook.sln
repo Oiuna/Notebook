@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook.Domain", "Notebook
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook.DAL", "Notebook.DAL\Notebook.DAL.csproj", "{D6CDC956-06ED-4D9E-86DC-E697C73B541E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Notebook.Application", "Notebook.Application\Notebook.Application.csproj", "{0407D307-1086-4568-A266-F0570F625DA6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,7 @@ Global
 		{01977A49-1A2C-4140-83A9-D737D02CC379} = {8B716566-408A-4862-AF05-D5EAD62EDAEA}
 		{867B40B2-D031-4205-AD20-E3942B3A1910} = {10C71F14-53EF-459A-BA44-5C4BFA1503A8}
 		{D6CDC956-06ED-4D9E-86DC-E697C73B541E} = {D9A4BA41-D30D-44A7-B042-B451ED42A6BA}
+		{0407D307-1086-4568-A266-F0570F625DA6} = {10C71F14-53EF-459A-BA44-5C4BFA1503A8}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{01977A49-1A2C-4140-83A9-D737D02CC379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,5 +41,9 @@ Global
 		{D6CDC956-06ED-4D9E-86DC-E697C73B541E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D6CDC956-06ED-4D9E-86DC-E697C73B541E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D6CDC956-06ED-4D9E-86DC-E697C73B541E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0407D307-1086-4568-A266-F0570F625DA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0407D307-1086-4568-A266-F0570F625DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0407D307-1086-4568-A266-F0570F625DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0407D307-1086-4568-A266-F0570F625DA6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
