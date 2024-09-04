@@ -1,0 +1,12 @@
+D:\dotnet\Projects\Notebook\Notebook.Domain\bin\Debug\net8.0\Notebook.Domain.deps.json
+D:\dotnet\Projects\Notebook\Notebook.Domain\bin\Debug\net8.0\Notebook.Domain.dll
+D:\dotnet\Projects\Notebook\Notebook.Domain\bin\Debug\net8.0\Notebook.Domain.pdb
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.AssemblyInfoInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.AssemblyInfo.cs
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.csproj.CoreCompileInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.sourcelink.json
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.dll
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\refint\Notebook.Domain.dll
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\Notebook.Domain.pdb
+D:\dotnet\Projects\Notebook\Notebook.Domain\obj\Debug\net8.0\ref\Notebook.Domain.dll

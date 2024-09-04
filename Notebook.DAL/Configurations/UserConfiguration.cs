@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Notebook.Domain.Entity;
 
@@ -16,6 +18,17 @@ namespace Notebook.DAL.Configurations
                 .WithOne(r => r.User)
                 .HasForeignKey(r => r.UserId)
                 .HasPrincipalKey(u => u.Id);
+            
+            builder.HasData(new List<User>()
+            {
+                new User()
+                {
+                    Id = 1,
+                    Login = "User1",
+                    Password = new string('-', 20),
+                    CreatedAt = DateTime.UtcNow
+                }
+            });
         }
     }
 }

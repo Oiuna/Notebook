@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Notebook.Api</name>
+    </assembly>
+    <members>
+        <member name="M:Notebook.Api.Controller.AuthController.Register(Notebook.Domain.Dto.User.RegisterUserDto)">
+             <summary>
+            Регистрация пользователя
+             </summary>
+             <param name="dto"></param>
+             <returns></returns>
+        </member>
+        <member name="M:Notebook.Api.Controller.AuthController.Login(Notebook.Domain.Dto.User.LoginUserDto)">
+            <summary>
+            Логин пользователя
+            </summary>
+            <param name="dto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Notebook.Api.Controller.ReportController.GetReports(System.Int64)">
+            <summary>
+            Получение отчета пользователя
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Sample request:
+            
+                GET
+                {
+                    "userId": "1"
+                }
+            
+            </remarks>
+            <response code="200">Отчеты найдены</response>
+            <response code="400">Отчет не найдены</response>
+        </member>
+        <member name="M:Notebook.Api.Controller.ReportController.GetReport(System.Int64)">
+            <summary>
+            Получение отчета с указанием идентификатора
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Sample request:
+            
+                GET
+                {
+                    "id": "1"
+                }
+            
+            </remarks>
+            <response code="200">Отчет найден</response>
+            <response code="400">Отчет не найден</response>
+        </member>
+        <member name="M:Notebook.Api.Controller.ReportController.Delete(System.Int64)">
+            <summary>
+            Удаление отчета с указанием идентификатора
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Sample request:
+            
+                DELETE
+                {
+                    "id": "1"
+                }
+            
+            </remarks>
+            <response code="200">Отчет удален</response>
+            <response code="400">Отчет не удален</response>
+        </member>
+        <member name="M:Notebook.Api.Controller.ReportController.Create(Notebook.Domain.Dto.Report.CreateReportDto)">
+            <summary>
+            Создание отчета
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Request for create report:
+            
+                POST
+                {
+                    "name": "Report #1",
+                    "description": "Test report",
+                    "userId": 1
+                }
+            
+            </remarks>
+            <response code="200">Отчет создан</response>
+            <response code="400">Отчет не создан</response>
+        </member>
+        <member name="M:Notebook.Api.Controller.ReportController.Update(Notebook.Domain.Dto.Report.UpdateReportDto)">
+            <summary>
+            Обновление отчета с указанием основных свойств
+            </summary>
+            <param name="dto"></param>
+            <remarks>
+            Request for create report:
+            
+                PUT
+                {
+                    "id": 1,
+                    "name": "Report #2",
+                    "description": "Test report2"
+                }
+            
+            </remarks>
+            <response code="200">Отчет обновлен</response>
+            <response code="400">Отчет не обновлен</response>
+        </member>
+        <member name="M:Notebook.Api.Startup.AddAuthenticationAndAuthorization(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Подключение аутентификации и авторизации
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Notebook.Api.Startup.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+             Настройка Swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>

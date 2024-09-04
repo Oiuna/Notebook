@@ -79,8 +79,9 @@ namespace Notebook.Application.Services
             try
             {
                 report = await _reportRepository.GetAll()
+                    .Where(r => r.Id == id)
                     .Select(r => new ReportDto(r.Id, r.Title, r.Description, r.CreatedAt.ToLongDateString()))
-                    .FirstOrDefaultAsync(r => r.Id == id);
+                    .FirstOrDefaultAsync();
             }
             catch (Exception ex)
             {
@@ -94,7 +95,7 @@ namespace Notebook.Application.Services
 
             if (report == null)
             {
-                _logger.Warning("Отчет с {Id} не найден", id);
+                _logger.Warning($"Отчет с {id} не найден", id);
                 return new BaseResult<ReportDto>()
                 {
                     ErrorMessage = ErrorMessage.ReportNotFound,

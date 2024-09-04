@@ -12,7 +12,7 @@ namespace Notebook.DAL.DependencyInjection
     {
         public static void AddDataAccessLayer(this IServiceCollection services, IConfiguration configuration)
         {
-            var connectionString = configuration.GetConnectionString("PostgreSQL");
+            var connectionString = configuration.GetConnectionString("PostgresSQL");
 
             services.AddSingleton<DateInterceptor>();
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -25,6 +25,7 @@ namespace Notebook.DAL.DependencyInjection
         public static void InitRepositories(this IServiceCollection services)
         {
             services.AddScoped<IBaseRepository<User>, BaseRepository<User>>();
+            services.AddScoped<IBaseRepository<UserToken>, BaseRepository<UserToken>>();
             services.AddScoped<IBaseRepository<Report>, BaseRepository<Report>>();
         }
     }

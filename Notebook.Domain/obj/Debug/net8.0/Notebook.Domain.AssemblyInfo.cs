@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Notebook.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+db6fd5efc314537cae0e771241acf096b0dfdf2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d3f539de06c9042d52c264d8c40b6644f9142c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Notebook.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Notebook.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

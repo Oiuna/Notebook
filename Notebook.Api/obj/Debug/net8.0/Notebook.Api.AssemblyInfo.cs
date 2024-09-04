@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("1453ee8f-c557-4c91-b897-5fa40d674f39")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Notebook.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4f521479e5564f2b75be38a33dbc3b0e2a61b01")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69d3f539de06c9042d52c264d8c40b6644f9142c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Notebook.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Notebook.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

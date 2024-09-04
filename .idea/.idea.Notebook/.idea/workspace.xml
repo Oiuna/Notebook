@@ -13,7 +13,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/BaseRepository.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/06c046bf69aa4f768c77e50706275b1b26a820/7A/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/5147b10c5a8c4522b56fba0a889139cfc8f908/63/Type.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2lN5PpxtVcEnJGmhssWoJVKoikE" />
   <component name="ProjectViewState">
@@ -21,10 +22,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.350173" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Notebook.Api: IIS Express">
     <configuration name="Notebook.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
@@ -81,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1725007674620</updated>
-      <workItem from="1725007677873" duration="38930000" />
+      <workItem from="1725007677873" duration="77382000" />
     </task>
     <servers />
   </component>
