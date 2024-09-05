@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Notebook.Api;
+using Notebook.Api.Middlewares;
 using Notebook.Application.DependencyInjection;
 using Notebook.DAL.DependencyInjection;
 using Notebook.Domain.Settings;
@@ -25,6 +27,8 @@ builder.Services.AddApplication();
 
 var app = builder.Build();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -36,6 +40,8 @@ if (app.Environment.IsDevelopment())
             options.RoutePrefix = string.Empty;
         });
 }
+
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.UseHttpsRedirection();
 

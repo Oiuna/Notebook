@@ -128,13 +128,15 @@ namespace Notebook.Application.Services
                 {
                     userToken.RefreshToken = refreshToken;
                     userToken.RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7);
+                    
+                    await _userTokenRepository.UpdateAsync(userToken);
                 }
                 
                 return new BaseResult<TokenDto>()
                 {
                     Data = new TokenDto()
                     {
-                        AccessToken = "",
+                        AccessToken = accessToken,
                         RefreshToken = refreshToken
                     }
                 };
@@ -153,7 +155,7 @@ namespace Notebook.Application.Services
         private string HashPassword(string password)
         {
             var bytes = SHA256.HashData(Encoding.UTF8.GetBytes(password));
-            return BitConverter.ToString(bytes).ToLower();
+            return Convert.ToBase64String(bytes);
         }
 
         private bool IsVerifyPassword(string userPasswordHash, string userPassword)

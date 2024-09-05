@@ -22,5 +22,3 @@ D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\Notebook.Appli
 D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\refint\Notebook.Application.dll
 D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\Notebook.Application.pdb
 D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\ref\Notebook.Application.dll
-D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\en\Notebook.Application.resources.cs
-D:\dotnet\Projects\Notebook\Notebook.Application\obj\Debug\net8.0\ru\Notebook.Application.resources.cs

@@ -8,10 +8,13 @@
         
         UserNotFound = 11,
         UserAlreadyExists = 12,
-        PasswordIsWrong = 13,
+        UserUnauthorizedAccess = 13,
         
-        InternalServerError = 10,
+        PasswordNotEqualsPasswordConfirm = 21,
+        PasswordIsWrong = 22,
         
-        PasswordNotEqualsPasswordConfirm = 21
+        InternalServerError = 10
+        
+        
     }
 }
