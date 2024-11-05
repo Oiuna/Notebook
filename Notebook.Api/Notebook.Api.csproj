@@ -17,13 +17,20 @@
           <PrivateAssets>all</PrivateAssets>
           <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
         </PackageReference>
+        <PackageReference Include="prometheus-net.AspNetCore" Version="8.2.1" />
         <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\Notebook.Application\Notebook.Application.csproj" />
+      <ProjectReference Include="..\Notebook.Consumer\Notebook.Consumer.csproj" />
       <ProjectReference Include="..\Notebook.DAL\Notebook.DAL.csproj" />
+      <ProjectReference Include="..\Notebook.Producer\Notebook.Producer.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Remove="Microsoft.Extensions.Logging" />
     </ItemGroup>
 
 </Project>

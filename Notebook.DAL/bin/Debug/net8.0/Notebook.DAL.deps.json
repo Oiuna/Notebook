@@ -563,6 +563,9 @@
       },
       "System.Threading.Channels/6.0.0": {},
       "Notebook.Domain/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.8"
+        },
         "runtime": {
           "Notebook.Domain.dll": {}
         }

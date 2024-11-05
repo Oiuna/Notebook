@@ -1,7 +1,56 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\dotnet\\Projects\\Notebook\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|d:\\dotnet\\projects\\notebook\\notebook.application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|solutionrelative:notebook.application\\services\\roleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01977A49-1A2C-4140-83A9-D737D02CC379}|Notebook.Api\\Notebook.Api.csproj|d:\\dotnet\\projects\\notebook\\notebook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01977A49-1A2C-4140-83A9-D737D02CC379}|Notebook.Api\\Notebook.Api.csproj|solutionrelative:notebook.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8FA473A-2A3D-43D5-829D-9EC42664FDA1}|Notebook.Consumer\\Notebook.Consumer.csproj|d:\\dotnet\\projects\\notebook\\notebook.consumer\\rabbitmqlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8FA473A-2A3D-43D5-829D-9EC42664FDA1}|Notebook.Consumer\\Notebook.Consumer.csproj|solutionrelative:notebook.consumer\\rabbitmqlistener.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75135BA2-F0BC-4FC4-8B22-3D2C18487712}|Notebook.Producer\\Notebook.Producer.csproj|d:\\dotnet\\projects\\notebook\\notebook.producer\\producer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75135BA2-F0BC-4FC4-8B22-3D2C18487712}|Notebook.Producer\\Notebook.Producer.csproj|solutionrelative:notebook.producer\\producer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|d:\\dotnet\\projects\\notebook\\notebook.application\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|solutionrelative:notebook.application\\services\\reportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|d:\\dotnet\\projects\\notebook\\notebook.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|solutionrelative:notebook.dal\\repositories\\baserepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|d:\\dotnet\\projects\\notebook\\notebook.application\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0407D307-1086-4568-A266-F0570F625DA6}|Notebook.Application\\Notebook.Application.csproj|solutionrelative:notebook.application\\dependencyinjection\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01977A49-1A2C-4140-83A9-D737D02CC379}|Notebook.Api\\Notebook.Api.csproj|d:\\dotnet\\projects\\notebook\\notebook.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01977A49-1A2C-4140-83A9-D737D02CC379}|Notebook.Api\\Notebook.Api.csproj|solutionrelative:notebook.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{867B40B2-D031-4205-AD20-E3942B3A1910}|Notebook.Domain\\Notebook.Domain.csproj|d:\\dotnet\\projects\\notebook\\notebook.domain\\extensions\\distributedcacheextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{867B40B2-D031-4205-AD20-E3942B3A1910}|Notebook.Domain\\Notebook.Domain.csproj|solutionrelative:notebook.domain\\extensions\\distributedcacheextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|d:\\dotnet\\projects\\notebook\\notebook.dal\\migrations\\20240913005408_initial_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|solutionrelative:notebook.dal\\migrations\\20240913005408_initial_2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|d:\\dotnet\\projects\\notebook\\notebook.dal\\migrations\\20240902080714_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|solutionrelative:notebook.dal\\migrations\\20240902080714_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|d:\\dotnet\\projects\\notebook\\notebook.dal\\migrations\\20240905091149_adduserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6CDC956-06ED-4D9E-86DC-E697C73B541E}|Notebook.DAL\\Notebook.DAL.csproj|solutionrelative:notebook.dal\\migrations\\20240905091149_adduserroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +67,161 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Producer.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Producer\\Producer.cs",
+              "RelativeDocumentMoniker": "Notebook.Producer\\Producer.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Producer\\Producer.cs",
+              "RelativeToolTip": "Notebook.Producer\\Producer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T06:34:57.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RabbitMqListener.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Consumer\\RabbitMqListener.cs",
+              "RelativeDocumentMoniker": "Notebook.Consumer\\RabbitMqListener.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Consumer\\RabbitMqListener.cs",
+              "RelativeToolTip": "Notebook.Consumer\\RabbitMqListener.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-02T06:34:25.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Api\\Program.cs",
+              "RelativeDocumentMoniker": "Notebook.Api\\Program.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Api\\Program.cs",
+              "RelativeToolTip": "Notebook.Api\\Program.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T04:37:11.159Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RoleService.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\Services\\RoleService.cs",
+              "RelativeDocumentMoniker": "Notebook.Application\\Services\\RoleService.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\Services\\RoleService.cs",
+              "RelativeToolTip": "Notebook.Application\\Services\\RoleService.cs",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAowAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T08:19:03.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Repositories\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "Notebook.DAL\\Repositories\\BaseRepository.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Repositories\\BaseRepository.cs",
+              "RelativeToolTip": "Notebook.DAL\\Repositories\\BaseRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T01:21:18.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ReportService.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\Services\\ReportService.cs",
+              "RelativeDocumentMoniker": "Notebook.Application\\Services\\ReportService.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\Services\\ReportService.cs",
+              "RelativeToolTip": "Notebook.Application\\Services\\ReportService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABcAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:54:58.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Notebook.Application\\DependencyInjection\\DependencyInjection.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Application\\DependencyInjection\\DependencyInjection.cs",
+              "RelativeToolTip": "Notebook.Application\\DependencyInjection\\DependencyInjection.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCoAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T13:53:33.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Notebook.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Notebook.Api\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:47:41.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DistributedCacheExtensions.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.Domain\\Extensions\\DistributedCacheExtensions.cs",
+              "RelativeDocumentMoniker": "Notebook.Domain\\Extensions\\DistributedCacheExtensions.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.Domain\\Extensions\\DistributedCacheExtensions.cs",
+              "RelativeToolTip": "Notebook.Domain\\Extensions\\DistributedCacheExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T05:47:23.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20240902080714_Initial.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240902080714_Initial.cs",
+              "RelativeDocumentMoniker": "Notebook.DAL\\Migrations\\20240902080714_Initial.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240902080714_Initial.cs",
+              "RelativeToolTip": "Notebook.DAL\\Migrations\\20240902080714_Initial.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T01:01:04.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20240905091149_AddUserRoles.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240905091149_AddUserRoles.cs",
+              "RelativeDocumentMoniker": "Notebook.DAL\\Migrations\\20240905091149_AddUserRoles.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240905091149_AddUserRoles.cs",
+              "RelativeToolTip": "Notebook.DAL\\Migrations\\20240905091149_AddUserRoles.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T01:00:37.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20240913005408_Initial_2.cs",
+              "DocumentMoniker": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240913005408_Initial_2.cs",
+              "RelativeDocumentMoniker": "Notebook.DAL\\Migrations\\20240913005408_Initial_2.cs",
+              "ToolTip": "D:\\dotnet\\Projects\\Notebook\\Notebook.DAL\\Migrations\\20240913005408_Initial_2.cs",
+              "RelativeToolTip": "Notebook.DAL\\Migrations\\20240913005408_Initial_2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T00:59:54.525Z",
+              "EditorCaption": ""
             }
           ]
         }

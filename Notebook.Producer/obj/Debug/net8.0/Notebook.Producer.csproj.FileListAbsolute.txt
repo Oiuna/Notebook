@@ -1,0 +1,13 @@
+D:\dotnet\Projects\Notebook\Notebook.Producer\bin\Debug\net8.0\Notebook.Producer.deps.json
+D:\dotnet\Projects\Notebook\Notebook.Producer\bin\Debug\net8.0\Notebook.Producer.dll
+D:\dotnet\Projects\Notebook\Notebook.Producer\bin\Debug\net8.0\Notebook.Producer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.csproj.AssemblyReference.cache
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.AssemblyInfoInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.AssemblyInfo.cs
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.csproj.CoreCompileInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.sourcelink.json
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.dll
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\refint\Notebook.Producer.dll
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\Notebook.Producer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Producer\obj\Debug\net8.0\ref\Notebook.Producer.dll

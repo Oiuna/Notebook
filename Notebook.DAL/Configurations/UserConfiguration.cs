@@ -18,7 +18,20 @@ namespace Notebook.DAL.Configurations
                 .WithOne(r => r.User)
                 .HasForeignKey(r => r.UserId)
                 .HasPrincipalKey(u => u.Id);
-            
+
+            /*
+            builder.HasMany(u => u.Roles)
+                .WithMany(r => r.Users)
+                .UsingEntity<UserRole>(
+                    l => l.HasOne<Role>().WithMany().HasForeignKey(x => x.RoleId),
+                    l => l.HasOne<User>().WithMany().HasForeignKey(x => x.UserId)
+                );
+            */
+
+            builder.HasMany(u => u.Roles)
+                .WithMany(r => r.Users)
+                .UsingEntity<UserRole>();
+                
             builder.HasData(new List<User>()
             {
                 new User()

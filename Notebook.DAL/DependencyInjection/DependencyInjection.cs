@@ -4,6 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Notebook.DAL.Interceptors;
 using Notebook.DAL.Repositories;
 using Notebook.Domain.Entity;
+using Notebook.Domain.Interfaces.Databases;
 using Notebook.Domain.Interfaces.Repositories;
 
 namespace Notebook.DAL.DependencyInjection
@@ -24,7 +25,10 @@ namespace Notebook.DAL.DependencyInjection
 
         public static void InitRepositories(this IServiceCollection services)
         {
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IBaseRepository<User>, BaseRepository<User>>();
+            services.AddScoped<IBaseRepository<Role>, BaseRepository<Role>>();
+            services.AddScoped<IBaseRepository<UserRole>, BaseRepository<UserRole>>();
             services.AddScoped<IBaseRepository<UserToken>, BaseRepository<UserToken>>();
             services.AddScoped<IBaseRepository<Report>, BaseRepository<Report>>();
         }

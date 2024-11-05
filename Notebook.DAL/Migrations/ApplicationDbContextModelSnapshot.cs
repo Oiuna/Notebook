@@ -65,11 +65,46 @@ namespace Notebook.DAL.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 9, 4, 8, 1, 54, 869, DateTimeKind.Utc).AddTicks(8854),
+                            CreatedAt = new DateTime(2024, 9, 13, 1, 2, 5, 566, DateTimeKind.Utc).AddTicks(6615),
                             CreatedBy = 0L,
                             Description = "test1",
                             Title = "rep1",
                             UserId = 1L
+                        });
+                });
+
+            modelBuilder.Entity("Notebook.Domain.Entity.Role", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<long>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("character varying(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Role");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Name = "User"
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Name = "Moderator"
                         });
                 });
 
@@ -110,10 +145,32 @@ namespace Notebook.DAL.Migrations
                         new
                         {
                             Id = 1L,
-                            CreatedAt = new DateTime(2024, 9, 4, 8, 1, 54, 870, DateTimeKind.Utc).AddTicks(3127),
+                            CreatedAt = new DateTime(2024, 9, 13, 1, 2, 5, 569, DateTimeKind.Utc).AddTicks(4698),
                             CreatedBy = 0L,
                             Login = "User1",
                             Password = "--------------------"
+                        });
+                });
+
+            modelBuilder.Entity("Notebook.Domain.Entity.UserRole", b =>
+                {
+                    b.Property<long>("RoleId")
+                        .HasColumnType("bigint");
+
+                    b.Property<long>("UserId")
+                        .HasColumnType("bigint");
+
+                    b.HasKey("RoleId", "UserId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserRole");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleId = 2L,
+                            UserId = 1L
                         });
                 });
 
@@ -147,7 +204,7 @@ namespace Notebook.DAL.Migrations
                         {
                             Id = 1L,
                             RefreshToken = "lkdmfvnjkldmf574dlf",
-                            RefreshTokenExpireTime = new DateTime(2024, 9, 11, 8, 1, 54, 870, DateTimeKind.Utc).AddTicks(5212),
+                            RefreshTokenExpireTime = new DateTime(2024, 9, 20, 1, 2, 5, 569, DateTimeKind.Utc).AddTicks(8964),
                             UserId = 1L
                         });
                 });
@@ -161,6 +218,21 @@ namespace Notebook.DAL.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("Notebook.Domain.Entity.UserRole", b =>
+                {
+                    b.HasOne("Notebook.Domain.Entity.Role", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Notebook.Domain.Entity.User", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Notebook.Domain.Entity.UserToken", b =>

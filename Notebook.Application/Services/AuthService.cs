@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.Intrinsics.Arm;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -12,6 +13,7 @@ using Notebook.Domain.Dto;
 using Notebook.Domain.Dto.User;
 using Notebook.Domain.Entity;
 using Notebook.Domain.Enum;
+using Notebook.Domain.Interfaces.Databases;
 using Notebook.Domain.Interfaces.Repositories;
 using Notebook.Domain.Interfaces.Services;
 using Notebook.Domain.Result;
@@ -21,19 +23,23 @@ namespace Notebook.Application.Services
 {
     public class AuthService : IAuthService
     {
+        private readonly IUnitOfWork _unitOfWork;
         private readonly IBaseRepository<User> _userRepository;
         private readonly IBaseRepository<UserToken> _userTokenRepository;
+        private readonly IBaseRepository<Role> _roleRepository;
         private readonly ITokenService _tokenService;
         private readonly ILogger _logger;
         private readonly IMapper _mapper;
 
-        public AuthService(IBaseRepository<User> userRepository, ILogger logger, IMapper mapper, IBaseRepository<UserToken> userTokenRepository, ITokenService tokenService)
+        public AuthService(IBaseRepository<User> userRepository, ILogger logger, IMapper mapper, IBaseRepository<UserToken> userTokenRepository, ITokenService tokenService, IBaseRepository<Role> roleRepository, IBaseRepository<UserRole> userRoleRepository, IUnitOfWork unitOfWork)
         {
             _userRepository = userRepository;
             _logger = logger;
             _mapper = mapper;
             _userTokenRepository = userTokenRepository;
             _tokenService = tokenService;
+            _roleRepository = roleRepository;
+            _unitOfWork = unitOfWork;
         }
 
         public async Task<BaseResult<UserDto>> Register(RegisterUserDto dto)
@@ -60,12 +66,45 @@ namespace Notebook.Application.Services
                 }
 
                 var hashUserPassword = HashPassword(dto.Password);
-                user = new User()
+
+                using (var transaction = await _unitOfWork.BeginTransactionAsync())
                 {
-                    Login = dto.Login,
-                    Password = hashUserPassword
-                };
-                await _userRepository.CreateAsync(user);
+                    try
+                    {
+                        user = new User()
+                        {
+                            Login = dto.Login,
+                            Password = hashUserPassword
+                        };
+                        await _unitOfWork.Users.CreateAsync(user);
+                        await _unitOfWork.UserRoles.SaveChangesAsync();
+                        
+                        var role = await _roleRepository.GetAll().FirstOrDefaultAsync(x => x.Name == nameof(Roles.User)); 
+                        if (role == null)
+                        {
+                            return new BaseResult<UserDto>()
+                            {
+                                ErrorMessage = ErrorMessage.RoleNotFound,
+                                ErrorCode = (int)ErrorCodes.RoleNotFound
+                            }; 
+                        }
+                        
+                        UserRole userRole = new UserRole()
+                        {
+                            UserId = user.Id,
+                            RoleId = role.Id
+                        };
+                        await _unitOfWork.UserRoles.CreateAsync(userRole);
+                        await _unitOfWork.UserRoles.SaveChangesAsync();
+                        
+                        await transaction.CommitAsync();
+                    }
+                    catch (Exception e)
+                    {
+                        await transaction.RollbackAsync();
+                    }
+                }
+                
                 return new BaseResult<UserDto>()
                 {
                     Data = _mapper.Map<UserDto>(user)
@@ -84,9 +123,9 @@ namespace Notebook.Application.Services
 
         public async Task<BaseResult<TokenDto>> Login(LoginUserDto dto)
         {
-            try
-            {
-                var user = await _userRepository.GetAll().FirstOrDefaultAsync(x => x.Login == dto.Login);
+            var user = await _userRepository.GetAll()
+                    .Include(x => x.Roles)
+                    .FirstOrDefaultAsync(x => x.Login == dto.Login);
                 if (user == null)
                 {
                     return new BaseResult<TokenDto>()
@@ -106,11 +145,11 @@ namespace Notebook.Application.Services
                 }
                 
                 var userToken = await _userTokenRepository.GetAll().FirstOrDefaultAsync(x => x.UserId == user.Id);
-                var claims = new List<Claim>()
-                {
-                    new Claim(ClaimTypes.Name, user.Login),
-                    new Claim(ClaimTypes.Role, "User") //хардкод, пока не созданы роли
-                };
+
+                var userRoles = user.Roles;
+                var claims = userRoles.Select(x => new Claim(ClaimTypes.Role, x.Name)).ToList();
+                claims.Add(new Claim(ClaimTypes.Name, user.Login));
+                
                 var accessToken = _tokenService.GenerateAccessToken(claims);
                 var refreshToken = _tokenService.GenerateRefreshToken();
                 
@@ -129,7 +168,8 @@ namespace Notebook.Application.Services
                     userToken.RefreshToken = refreshToken;
                     userToken.RefreshTokenExpireTime = DateTime.UtcNow.AddDays(7);
                     
-                    await _userTokenRepository.UpdateAsync(userToken);
+                    _userTokenRepository.Update(userToken);
+                    await _userTokenRepository.SaveChangesAsync();
                 }
                 
                 return new BaseResult<TokenDto>()
@@ -140,16 +180,6 @@ namespace Notebook.Application.Services
                         RefreshToken = refreshToken
                     }
                 };
-            }
-            catch (Exception ex)
-            {
-                _logger.Error(ex, ex.Message);
-                return new BaseResult<TokenDto>()
-                {
-                    ErrorMessage = ErrorMessage.InternalServerError,
-                    ErrorCode = (int)ErrorCodes.InternalServerError
-                };
-            }
         }
 
         private string HashPassword(string password)

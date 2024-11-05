@@ -139,3 +139,17 @@ D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.IdentityMode
 D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\RabbitMQ.Client.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Notebook.Consumer.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Notebook.Producer.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Notebook.Consumer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Notebook.Producer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Prometheus.NetStandard.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\Prometheus.AspNetCore.dll
+D:\dotnet\Projects\Notebook\Notebook.Api\bin\Debug\net8.0\StackExchange.Redis.dll

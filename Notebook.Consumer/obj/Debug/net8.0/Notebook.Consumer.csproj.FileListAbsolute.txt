@@ -1,0 +1,16 @@
+D:\dotnet\Projects\Notebook\Notebook.Consumer\bin\Debug\net8.0\Notebook.Consumer.deps.json
+D:\dotnet\Projects\Notebook\Notebook.Consumer\bin\Debug\net8.0\Notebook.Consumer.dll
+D:\dotnet\Projects\Notebook\Notebook.Consumer\bin\Debug\net8.0\Notebook.Consumer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Consumer\bin\Debug\net8.0\Notebook.Domain.dll
+D:\dotnet\Projects\Notebook\Notebook.Consumer\bin\Debug\net8.0\Notebook.Domain.pdb
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.csproj.AssemblyReference.cache
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.GeneratedMSBuildEditorConfig.editorconfig
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.AssemblyInfoInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.AssemblyInfo.cs
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.csproj.CoreCompileInputs.cache
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.sourcelink.json
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.9D4F09D2.Up2Date
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.dll
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\refint\Notebook.Consumer.dll
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\Notebook.Consumer.pdb
+D:\dotnet\Projects\Notebook\Notebook.Consumer\obj\Debug\net8.0\ref\Notebook.Consumer.dll
